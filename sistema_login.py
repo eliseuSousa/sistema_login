@@ -1,7 +1,6 @@
 from tkinter import*
 import sqlite3
 from typing import ContextManager
-from PIL import Image, ImageTk
 from tkinter import messagebox
 
 def message_erro(msg):
@@ -109,6 +108,7 @@ def new_login():
     """Cria uma tela para a o cadastro de um novo usuário."""
     new_root = Tk()
     new_root.title('New login')
+    new_root.call('wm', 'iconphoto', new_root._w, PhotoImage(file='./img/registro.png'))
 
     # Caixas de diálogo
     user_name = Entry(new_root, width=25)
@@ -145,7 +145,7 @@ def main():
     """Cria a tela inicial."""
     root = Tk()
     root.title("Login")
-
+    root.call('wm', 'iconphoto', root._w, PhotoImage(file='./img/enter.png'))
     # Caixas de diálogo para a coleta de dados
     user_name = Entry(root, width=25)
     user_name.grid(row=0, column=1, padx=15,
