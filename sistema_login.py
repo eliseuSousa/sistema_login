@@ -114,10 +114,10 @@ def new_login():
     user_name = Entry(new_root, width=25)
     user_name.grid(row=0, column=1, padx=15, pady=10)
     
-    password = Entry(new_root, width=25)
+    password = Entry(new_root, show='*', width=25)
     password.grid(row=1, column=1, padx=15, pady=10)
 
-    confirm_password = Entry(new_root, width=25)
+    confirm_password = Entry(new_root, show='*', width=25)
     confirm_password.grid(row=2, column=1, padx=15, pady=10)
 
     # Rótulos
@@ -150,7 +150,7 @@ def main():
     user_name = Entry(root, width=25)
     user_name.grid(row=0, column=1, padx=15,
     pady=10)
-    password = Entry(root, width=25)
+    password = Entry(root, show='*', width=25)
     password.grid(row=1, column=1, padx=15, pady=10)
 
     # Rótulos
